@@ -1,6 +1,12 @@
 package com.romainpiel.liveemoji;
 
+//import android.graphics.drawable.AnimationDrawable;
+//import android.graphics.drawable.Drawable;
+//import android.support.graphics.drawable.AnimatedVectorDrawableCompat;
+
 import android.graphics.drawable.AnimatedVectorDrawable;
+//graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -19,7 +25,7 @@ class EmojiViewHolder extends RecyclerView.ViewHolder {
     }
 
     void setAnimated(boolean animated) {
-        AnimatedVectorDrawable drawable = (AnimatedVectorDrawable) imageView.getDrawable();
+        AnimationDrawable drawable = (AnimationDrawable) imageView.getDrawable();
         if (drawable == null) {
             return;
         }
